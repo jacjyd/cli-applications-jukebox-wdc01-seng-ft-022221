@@ -19,7 +19,7 @@ def help
 end 
 
 def list(songs)
-  songs.each do {|song| puts song}
+  songs.each {|song| puts song}
 end
 
 def play
