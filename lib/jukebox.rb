@@ -30,4 +30,6 @@ def help
   
 end 
 
-help
+def list(songs)
+  songs.each do {|song| puts song}
+end
