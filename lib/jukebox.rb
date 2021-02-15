@@ -47,11 +47,15 @@ def run
   
   case command
     when list
+      list(songs)
     when play 
+      play(songs)
     when help 
+      help
     when exit 
       exit_jukebox
-    
+    else
+      puts "Invalid command"
   end
 end 
 end 
