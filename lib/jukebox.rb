@@ -47,9 +47,9 @@ def run
   
   case command
     when list
-      list(songs)
+      list
     when play 
-      play(songs)
+      play
     when help 
       help
     when exit 
