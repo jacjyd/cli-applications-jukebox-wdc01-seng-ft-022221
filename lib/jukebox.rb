@@ -27,8 +27,13 @@ def play
   puts "Please enter a song name or number:"
   selection = gets.strip
   
-  if selection
-  
+  if selection.to_i != 0 && selection.to_i < songs.length
+    puts "Playing #{songs[selection-1]}"
+  elsif songs.include?(selection)
+    puts "Playing #{selection}"
+  else 
+    puts "Invalid input, please try again"
+  end 
 end 
 
 def exit_jukebox
