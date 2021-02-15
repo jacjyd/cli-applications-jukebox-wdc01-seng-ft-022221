@@ -26,6 +26,9 @@ end
 def play
   puts "Please enter a song name or number:"
   selection = gets.strip
+  
+  songs.each_with_index
+  
 end 
 
 def exit_jukebox
