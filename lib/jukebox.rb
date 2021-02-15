@@ -46,11 +46,11 @@ def run
   command = gets.strip
   
   case command
-  
-  
-  
-  if command == "exit"
-    exit_jukebox
+    when list
+    when play 
+    when help 
+    when exit 
+      exit_jukebox
     
   end
 end 
