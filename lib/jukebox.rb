@@ -46,13 +46,13 @@ def run(songs)
   command = gets.strip
   
   case command
-    when list
+    when "list"
       list(songs)
-    when play 
+    when "play" 
       play(songs)
-    when help 
+    when "help" 
       help
-    when exit 
+    when "exit" 
       exit_jukebox
     else
       puts "Invalid command"
