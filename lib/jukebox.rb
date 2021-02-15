@@ -23,7 +23,7 @@ def list(songs)
   songs.each_with_index {|song, i| puts "#{i+1}. #{song}"}
 end
 
-def play
+def play(songs)
   puts "Please enter a song name or number:"
   selection = gets.strip
   
